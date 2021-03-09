@@ -9,6 +9,8 @@ const router = Router();
 //const express = require(express);
 //const router = express.Router();
 
+const herramientas =require('./data.json');
+console.log(herramientas);
 
 //rutas
 router.get('/', (req, res) =>{
