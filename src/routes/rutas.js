@@ -9,9 +9,12 @@ const router = Router();
 //const express = require(express);
 //const router = express.Router();
 
+//le hice un camboi pendejo
+
 //rutas
 router.get('/', (req, res) =>{
     res.json({"name":"Susie"});
 });
 
 module.exports = router;
+
