@@ -1,0 +1,20 @@
+[
+    {
+        "id":"001",
+        "nombre":"herramienta 1",
+        "complejidad": "facil",
+        "utilidad": "grabar",
+        "tipo": "software",
+        "costo": "5 pesos",
+        "temaomateria": "video"
+    },
+    {
+        "id":"002",
+        "nombre": "herramienta 2",
+        "complejidad": "infernal",
+        "utilidad": "desgrabar",
+        "tipo": "software",
+        "costo": "69.420 pesos",
+        "temaomateria": "animacion"
+    }
+]
