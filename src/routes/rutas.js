@@ -124,4 +124,28 @@ router.get('/tom/id/:id', (req, res) =>{
     });
  });
 
+   //ruta x costo
+   router.get('/costo/:costo', (req, res) =>{
+    const {costo} = req.params;
+    const h = [];
+
+    herramientas.forEach(herramienta => {
+        if(herramienta.costo == costo){
+            h.push(herramienta);
+        }
+    });
+    res.send(h);
+ });
+
+//ruta costo de herramienta
+router.get('/costo/id/:id', (req, res) =>{
+    const {id} = req.params;
+    herramientas.forEach(herramienta => {
+        if(herramienta.id == id){
+            res.json(herramienta.costo);
+            console.log(herramienta.nombre, herramienta.costo);
+        }
+    });
+ });
+
 module.exports = router;
